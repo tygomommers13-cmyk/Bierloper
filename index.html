@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bierloper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bierloper</h1>
+  
+
+  <div id="rounds" style="display:none;">
+    <h2 id="round-title">Ronde 1</h2>
+    <h3 id="totals"></h3>
+    <div id="round-list"></div>
+  <button onclick="nextRound()">Volgende ronde</button>
+  <button onclick="resetRoundsOnly()">Reset alleen rondes</button>
+  <button onclick="resetAll()">Reset alles</button>
+  </div>
+
+  <div id="setup">
+    <button onclick="startRounds()">Start rondes</button>
+  </div>
+
+  <div id="participants-section">
+    <h2>Deelnemers</h2>
+    <div id="participants"></div>
+    <button onclick="addParticipant()">+ Deelnemer toevoegen</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
