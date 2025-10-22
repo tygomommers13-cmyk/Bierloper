@@ -23,11 +23,20 @@
     <button onclick="startRounds()">Start rondes</button>
   </div>
 
-  <div id="participants-section">
-    <h2>Deelnemers</h2>
-    <div id="participants"></div>
-    <button onclick="addParticipant()">+ Deelnemer toevoegen</button>
+ <div id="participants-section">
+  <h2>Deelnemers</h2>
+  <div id="participants"></div>
+  <button onclick="addParticipant()">+ Deelnemer toevoegen</button>
+  <div id="add-drink-section">
+    <h2>Drank Opties</h2>
+    <input type="text" id="new-drink-input" placeholder="Nieuw drankje toevoegen">
+    <button onclick="addDrinkOption()">Drankje toevoegen</button>
+    <div style="margin-top:1em;">
+      <button onclick="showRemoveDrinkList()" >Drankje verwijderen</button>
+      <span id="remove-drink-list" style="display:none;"></span>
+    </div>
   </div>
+</div>
 
   <script src="script.js"></script>
 </body>
